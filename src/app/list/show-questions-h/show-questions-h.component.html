@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Hardware
+      </ion-title>
+      <ion-buttons slot="primary">
+        <ion-button (click)="onCancel()">
+          <ion-icon name="close"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content text-center>
+      <ion-card class="welcome-card" color="primary">
+          <ion-card-header>
+            <ion-card-title><span id="random1Question"></span></ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p><span id="random1Answer"></span></p>
+          </ion-card-content>
+      </ion-card>
+      <ion-card class="welcome-card" color="primary">
+          <ion-card-header>
+            <ion-card-title><span id="random2Question"></span></ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p><span id="random2Answer"></span></p>
+          </ion-card-content>
+      </ion-card>
+  </ion-content>

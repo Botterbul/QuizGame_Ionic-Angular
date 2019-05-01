@@ -4,24 +4,34 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      List
+      Start Game
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of items">
-      <ion-icon [name]="item.icon" slot="start"></ion-icon>
-      {{item.title}}
-      <div class="item-note" slot="end">
-        {{item.note}}
-      </div>
-    </ion-item>
-  </ion-list>
-  <!--
-    <div *ngIf="selectedItem" padding>
-      You navigated here from <b>{{selectedItem.title }}</b>
-    </div>
-  -->
+  <ion-card class="welcome-card" color="danger" (click)="onCompFundClick()">
+    <ion-card-header>
+      <ion-card-title>Computer Fundamentals</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>This category has everything to do with computer fundamentals questions such as computer languages, common sense knowledge...</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card" color="primary" (click)="onHardwareClick()">
+    <ion-card-header>
+      <ion-card-title>Hardware</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>This category has everything to do with hardware questions such as RAM, CPU, Motherboard...</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card" color="success" (click)="onNetworkClick()">
+    <ion-card-header>
+      <ion-card-title>Networking</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>This category has everything to do with networking questions such as DNIC, Routers, Packets...</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -1,0 +1,7 @@
+{
+  "appId": "com.kommunikasieapp.ionicangular",
+  "appName": "komApp",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

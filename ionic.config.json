@@ -1,5 +1,7 @@
 {
   "name": "komApp",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
